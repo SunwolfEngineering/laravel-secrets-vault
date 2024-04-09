@@ -16,10 +16,9 @@
         }
     ],
     "require": {
-        "aws/aws-sdk-php": "^3.304",
+        "php": "^7.4|^8.0",
         "ext-json": "*",
-        "illuminate/support": "^8.0",
-        "php": "^7.4|^8.0"
+        "aws/aws-sdk-php": "^3.304"
     },
     "require-dev": {
         "mockery/mockery": "^1.6",
