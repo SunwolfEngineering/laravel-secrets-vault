@@ -1,0 +1,57 @@
+{
+    "name": "sunwolfengineering/laravel-secrets-vault",
+    "description": "Integrate Laravel applications with secret management systems for secure environment configuration.",
+    "keywords": [
+        "laravel",
+        "laravel-secrets-vault"
+    ],
+    "homepage": "https://github.com/sunwolfengineering/laravel-secrets-vault",
+    "license": "GPL-3.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joe Purdy",
+            "email": "oss@sunwolf.studio",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.304",
+        "ext-json": "*",
+        "illuminate/support": "^8.0",
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SunwolfEngineering\\LaravelSecretsVault\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SunwolfEngineering\\LaravelSecretsVault\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SunwolfEngineering\\LaravelSecretsVault\\LaravelSecretsVaultServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSecretsVault": "SunwolfEngineering\\LaravelSecretsVault\\LaravelSecretsVaultFacade"
+            }
+        }
+    }
+}
