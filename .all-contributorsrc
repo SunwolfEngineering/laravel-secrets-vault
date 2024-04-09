@@ -1,4 +1,22 @@
 {
   "projectName": "laravel-secrets-vault",
-  "projectOwner": "SunwolfEngineering"
+  "projectOwner": "SunwolfEngineering",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "joepurdy",
+      "name": "Joe Purdy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6409227?v=4",
+      "profile": "https://purdy.dev/?ref=github",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    }
+  ]
 }
